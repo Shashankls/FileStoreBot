@@ -8,7 +8,7 @@ import asyncio
 
 from sqlalchemy import Column, Integer, Boolean, String, ForeignKey, UniqueConstraint, func
 
-DATABASE_URL = os.environ.get("DATABASE_URL", "sharedis_Bot")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://shashank:shashank.ls1324@cluster0.x1uuavp.mongodb.net/?retryWrites=true&w=majority")
 
 def start() -> scoped_session:
     engine = create_engine(DATABASE_URL, client_encoding="utf8")
